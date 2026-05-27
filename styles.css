@@ -197,30 +197,87 @@ h1 {
 
 @media (max-width: 620px) {
   .card {
-    align-items: end;
-    padding: 28px 18px;
+    align-items: center;
+    min-height: 100dvh;
+    padding: 34px 18px;
+    overflow: auto;
   }
 
   .card__shade {
     background:
-      linear-gradient(90deg, rgba(3, 6, 9, 0.95) 0%, rgba(3, 6, 9, 0.78) 100%),
-      linear-gradient(180deg, rgba(3, 6, 9, 0.2) 0%, rgba(3, 6, 9, 0.86) 100%);
+      linear-gradient(90deg, rgba(3, 6, 9, 0.96) 0%, rgba(3, 6, 9, 0.8) 100%),
+      linear-gradient(180deg, rgba(3, 6, 9, 0.18) 0%, rgba(3, 6, 9, 0.76) 100%);
+  }
+
+  .card__media img {
+    object-position: 58% center;
+  }
+
+  .identity {
+    align-self: center;
+    padding-top: 18px;
   }
 
   h1 {
-    font-size: 3.15rem;
+    max-width: 330px;
+    font-size: 3rem;
   }
 
   .lead {
+    max-width: 330px;
+    margin-bottom: 24px;
     font-size: 1.03rem;
+  }
+
+  .stack {
+    max-width: 330px;
+    margin-bottom: 28px;
   }
 
   .links {
     display: grid;
+    max-width: 330px;
   }
 
   .link {
     width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .card {
+    padding: 24px 14px;
+  }
+
+  .kicker {
+    margin-bottom: 14px;
+    font-size: 0.72rem;
+  }
+
+  h1 {
+    max-width: 292px;
+    margin-bottom: 18px;
+    font-size: 2.6rem;
+  }
+
+  .lead,
+  .stack,
+  .links {
+    max-width: 292px;
+  }
+
+  .lead {
+    margin-bottom: 20px;
+    font-size: 0.98rem;
+  }
+
+  .stack {
+    gap: 6px;
+    margin-bottom: 22px;
+  }
+
+  .stack li {
+    padding: 6px 8px;
   }
 }
 
